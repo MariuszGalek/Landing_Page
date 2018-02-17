@@ -1,6 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700');
+$color-project: rgb(184, 139, 88);
 * {
 	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
 }
 body {
 	margin: 0;
@@ -29,7 +31,7 @@ body {
 		display: inline-block;
 		padding: 10px 0;
 		&:hover {
-			border-bottom: 5px solid rgb(184, 139, 88);
+			border-bottom: 5px solid $color-project;
 		}
 	}
 	a {
@@ -39,8 +41,177 @@ body {
 		text-decoration: none;
 		text-transform: uppercase;
 		color: white;
-		font-family: 'Montserrat', sans-serif;
 		font-weight: 700;
 		display: inline-block;
+	}
+}
+
+/*-- jumbotron --*/
+
+.jumbotron {
+	height: 80vh;
+	background: url('../images/bg1.png') center;
+	background-size: cover;
+	h1 {
+		font-weight: 700;
+		font-size: 72px;
+		padding-top: 20vh;
+		color: white;
+		span {
+		color: $color-project;
+		};
+	}
+	h3 {
+		color: white;
+		font-weight: 600;
+		font-size: 24px;
+	}
+	button {
+		margin-top: 30px;
+		padding: 10px 0;
+		height: 45px;
+		width: 200px;
+		font-size: 12px;
+		font-weight: bold;
+		background-color: $color-project;
+		color: white;
+		border-radius: 20px;
+		border-width: 0;
+		text-transform: uppercase;
+	}
+	button:active {
+		background-color: black;
+	}
+	.pagination {
+		margin-top: 120px;
+		.dot {
+			border: 3px solid $color-project;
+			margin: 0 10px;
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			display: inline-block;
+			cursor: pointer;
+		}
+		.full {
+			background: $color-project;
+		}
+	}
+}
+
+/*-- about us --*/
+
+.about-us {
+	height: 50vh;
+	.heading {
+		text-align: center;
+		font-weight: 600;
+		h1 {
+			font-size: 40;
+			font-weight: bold;
+		}
+		h5 {
+			font-size: 20;
+			color: rgb(174,174,174);
+			font-weight: bold;
+		}
+	}
+		.flex-container {
+      		display: inline-flex;
+      		flex-wrap: nowrap;
+      		flex-direction: row;
+      		.text {
+      			flex-direction: column;
+				justify-content: space-around;
+				flex-wrap: wrap-reverse;
+        		margin-top: 50px;
+				margin-bottom: 100px;
+				font-weight: 400;
+			}
+			button {
+				margin-top: 20px;
+				padding: 10px 0;
+				height: 45px;
+				width: 200px;
+				font-size: 12px;
+				font-weight: bold;
+				background-color: $color-project;
+				color: white;
+				border-radius: 20px;
+				border-width: 0;
+				text-transform: uppercase;
+			}
+			.video {
+				margin: 50px 0 0 20px;
+				width: 700px;
+				height: 290px;
+				background-image: url('../images/about.png');
+				background-size: cover;
+				box-shadow: 5px 15px 5px #CCC;
+				h2 {
+					color: #FFF;
+					margin-top: 120px;
+					font-weight: 600;
+					display: inline-flex;
+					padding-left: 70px;
+					padding-right: 10px;
+					position: relative;
+				}
+				i {
+					color: #fff;
+					position: absolute;
+					padding-top: 100px;
+					cursor: pointer;
+				}
+			}
+		
+		}
+}
+
+/*-- services --*/
+
+.services {
+	height: 45vh;
+	background-color: black;
+	color: #FFF;
+	.heading {
+		margin-top: 50px;
+		text-align: center;
+		font-weight: 600;
+		h1 {
+			font-size: 40;
+			font-weight: bold;
+		}
+		h5 {
+			font-size: 20;
+			color: rgb(174,174,174);
+			font-weight: bold;
+		}
+	}
+	.flex-container {
+		display: flex;
+		margin-top: 50px;
+		.quality, .design, .updates, .support {
+			text-align: center;
+			border-right: 2px solid rgb(56,56,56);
+			width: 25%;
+			img {
+				margin-bottom: 40px;
+			}
+			h4 {
+				text-transform: uppercase;
+				font-weight: 600;
+				flex-wrap: wrap;
+				padding: 0 20px;
+			}
+			p {
+				color: rgb(56,56,56);
+				font-size: 12px;
+				padding: 0 20px;
+			}
+		}
+		.quality {
+			border-left: 2px solid rgb(56,56,56);
+		}
 	}
 }
