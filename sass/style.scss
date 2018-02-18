@@ -49,7 +49,7 @@ body {
 /*-- jumbotron --*/
 
 .jumbotron {
-	height: 80vh;
+	height: auto;
 	background: url('../images/bg1.png') center;
 	background-size: cover;
 	h1 {
@@ -102,7 +102,7 @@ body {
 /*-- about us --*/
 
 .about-us {
-	height: 50vh;
+	height: auto;
 	.heading {
 		text-align: center;
 		font-weight: 600;
@@ -141,8 +141,11 @@ body {
 				border-width: 0;
 				text-transform: uppercase;
 			}
+				button:active {
+					background-color: black;
+			}
 			.video {
-				margin: 50px 0 0 20px;
+				margin: 50px 0 70px 20px;
 				width: 700px;
 				height: 290px;
 				background-image: url('../images/about.png');
@@ -171,7 +174,7 @@ body {
 /*-- services --*/
 
 .services {
-	height: 45vh;
+	height: auto;
 	background-color: black;
 	color: #FFF;
 	.heading {
@@ -190,7 +193,7 @@ body {
 	}
 	.flex-container {
 		display: flex;
-		margin-top: 50px;
+		margin: 50px 0;
 		.quality, .design, .updates, .support {
 			text-align: center;
 			border-right: 2px solid rgb(56,56,56);
@@ -213,5 +216,107 @@ body {
 		.quality {
 			border-left: 2px solid rgb(56,56,56);
 		}
+	}
+}
+
+/*-- projects --*/
+
+.projects {
+	height: 100vh;
+	.heading {
+		margin-top: 50px;
+		text-align: center;
+		font-weight: 600;
+		h1 {
+			font-size: 40;
+			font-weight: bold;
+		}
+		h5 {
+			font-size: 20;
+			color: rgb(174,174,174);
+			font-weight: bold;
+		}
+	}
+    .nav {
+        background-color: rgb(237,237,237);
+        display: inline-block;
+        border: 1px solid rgb(207,207,207);
+        border-radius: 30px;
+        padding: 0 20px;
+        margin: 50px 570px 20px 570px;
+        li {
+            padding: 10px;
+            border-right: 1px solid rgb(207,207,207);
+            &:last-of-type {
+                border-right: none;
+            }
+            &:hover {
+            	box-shadow: inset 0 -3px  $color-project;
+            }
+            a {
+                color: #000;
+                &:active {
+                	color: $color-project;
+                }
+            }
+        }
+	}
+	.row {
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		padding: 15px 0;
+	}
+	img {
+		z-index: 1;
+	}
+	.text-layer {
+		position: relative;
+		width: 255px;
+		height: 165px;
+	}
+	.description {
+		position: absolute;
+		top: 0;
+		color: #fff;
+		background-color: rgba(0,0,0, 0.7);
+		width: 255px;
+		height: 165px;
+		line-height: 20px;
+		text-align: center;
+		z-index: 10;
+		opacity: 0;
+		transition: all 0.5s ease;
+		h4 {
+			padding: 15px 0;
+			text-transform: uppercase;
+		}
+		p {
+			font-size: 12px;
+			font-weight: 400;
+		}
+	}
+	.description:hover {
+		opacity: 1;
+		cursor: pointer;
+	}
+	button {
+		margin-top: 40px;
+		padding: 10px 0;
+		height: 45px;
+		width: 200px;
+		font-size: 12px;
+		font-weight: bold;
+		background-color: $color-project;
+		color: white;
+		border-radius: 20px;
+		border-width: 0;
+		text-transform: uppercase;
+	}
+	button:active {
+		background-color: black;
+	}
+	.btn-more {
+		text-align: center;
 	}
 }

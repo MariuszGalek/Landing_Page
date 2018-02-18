@@ -53,7 +53,7 @@ body {
 
 /*-- jumbotron --*/
 .jumbotron {
-  height: 80vh;
+  height: auto;
   background: url("../images/bg1.png") center;
   background-size: cover;
 }
@@ -113,7 +113,7 @@ body {
 
 /*-- about us --*/
 .about-us {
-  height: 50vh;
+  height: auto;
 }
 
 .about-us .heading {
@@ -167,8 +167,12 @@ body {
   text-transform: uppercase;
 }
 
+.about-us .flex-container button:active {
+  background-color: black;
+}
+
 .about-us .flex-container .video {
-  margin: 50px 0 0 20px;
+  margin: 50px 0 70px 20px;
   width: 700px;
   height: 290px;
   background-image: url("../images/about.png");
@@ -196,7 +200,7 @@ body {
 
 /*-- services --*/
 .services {
-  height: 45vh;
+  height: auto;
   background-color: black;
   color: #FFF;
 }
@@ -221,7 +225,7 @@ body {
 .services .flex-container {
   display: -ms-flexbox;
   display: flex;
-  margin-top: 50px;
+  margin: 50px 0;
 }
 
 .services .flex-container .quality, .services .flex-container .design, .services .flex-container .updates, .services .flex-container .support {
@@ -250,5 +254,128 @@ body {
 
 .services .flex-container .quality {
   border-left: 2px solid #383838;
+}
+
+/*-- projects --*/
+.projects {
+  height: 100vh;
+}
+
+.projects .heading {
+  margin-top: 50px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.projects .heading h1 {
+  font-size: 40;
+  font-weight: bold;
+}
+
+.projects .heading h5 {
+  font-size: 20;
+  color: #aeaeae;
+  font-weight: bold;
+}
+
+.projects .nav {
+  background-color: #ededed;
+  display: inline-block;
+  border: 1px solid #cfcfcf;
+  border-radius: 30px;
+  padding: 0 20px;
+  margin: 50px 570px 20px 570px;
+}
+
+.projects .nav li {
+  padding: 10px;
+  border-right: 1px solid #cfcfcf;
+}
+
+.projects .nav li:last-of-type {
+  border-right: none;
+}
+
+.projects .nav li:hover {
+  box-shadow: inset 0 -3px #b88b58;
+}
+
+.projects .nav li a {
+  color: #000;
+}
+
+.projects .nav li a:active {
+  color: #b88b58;
+}
+
+.projects .row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding: 15px 0;
+}
+
+.projects img {
+  z-index: 1;
+}
+
+.projects .text-layer {
+  position: relative;
+  width: 255px;
+  height: 165px;
+}
+
+.projects .description {
+  position: absolute;
+  top: 0;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 255px;
+  height: 165px;
+  line-height: 20px;
+  text-align: center;
+  z-index: 10;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.projects .description h4 {
+  padding: 15px 0;
+  text-transform: uppercase;
+}
+
+.projects .description p {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.projects .description:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.projects button {
+  margin-top: 40px;
+  padding: 10px 0;
+  height: 45px;
+  width: 200px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #b88b58;
+  color: white;
+  border-radius: 20px;
+  border-width: 0;
+  text-transform: uppercase;
+}
+
+.projects button:active {
+  background-color: black;
+}
+
+.projects .btn-more {
+  text-align: center;
 }
 /*# sourceMappingURL=style.prefixed.css.map */
