@@ -571,4 +571,16 @@ body {
 .clients .pagination .full {
   background: #b88b58;
 }
+
+/*-- logos --*/
+.logos {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+.logos img {
+  padding: 10px 0;
+}
 /*# sourceMappingURL=style.prefixed.css.map */

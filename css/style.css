@@ -547,4 +547,14 @@ body {
   background: #b88b58;
 }
 
+/*-- logos --*/
+.logos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logos img {
+  padding: 10px 0;
+}
+
 /*# sourceMappingURL=style.css.map */
