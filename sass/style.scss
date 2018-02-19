@@ -392,6 +392,71 @@ body {
 	}
 	.pagination {
 		margin-top: 50px;
+		margin-bottom: 0;
+		padding-bottom: 50px;
+		display: flex;
+    	flex-wrap: wrap;
+    	justify-content: center;
+		.dot {
+			border: 3px solid $color-project;
+			margin: 0 10px;
+			width: 15px;
+			height: 15px;
+			border-radius: 50%;
+			display: inline-block;
+			cursor: pointer;
+		}
+		.full {
+			background: $color-project;
+		}
+	}
+}
+
+/*-- clients --*/
+
+.clients {
+	height: auto;
+	background-color: rgb(247,247,247);
+	.heading {
+		padding-top: 20px;
+		text-align: center;
+		font-weight: 600;
+		h2 {
+			font-size: 40;
+			font-weight: bold;
+		}
+		h5 {
+			font-size: 20;
+			color: rgb(174,174,174);
+			font-weight: bold;
+		}
+	}
+	.about-client {
+		text-align: center;
+		width: 700px;
+		margin: 0 auto;
+		img {
+			margin: 50px 0 20px 0;
+		}
+		h3 {
+			font-weight: 700;
+		}
+		h4 {
+			font-weight: 600;
+			padding-bottom: 20px;
+		}
+		i {
+			color: rgb(126,126,126);
+			padding-bottom: 10px;
+		}
+		p {
+			font-weight: 300;
+			color: rgb(126,126,126);
+			font-size: 14px;
+		}
+	}
+	.pagination {
+		margin-top: 50px;
 		padding-bottom: 50px;
 		display: flex;
     	flex-wrap: wrap;

@@ -451,6 +451,7 @@ body {
 
 .team .pagination {
   margin-top: 50px;
+  margin-bottom: 0;
   padding-bottom: 50px;
   display: flex;
   flex-wrap: wrap;
@@ -468,6 +469,81 @@ body {
 }
 
 .team .pagination .full {
+  background: #b88b58;
+}
+
+/*-- clients --*/
+.clients {
+  height: auto;
+  background-color: #f7f7f7;
+}
+
+.clients .heading {
+  padding-top: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.clients .heading h2 {
+  font-size: 40;
+  font-weight: bold;
+}
+
+.clients .heading h5 {
+  font-size: 20;
+  color: #aeaeae;
+  font-weight: bold;
+}
+
+.clients .about-client {
+  text-align: center;
+  width: 700px;
+  margin: 0 auto;
+}
+
+.clients .about-client img {
+  margin: 50px 0 20px 0;
+}
+
+.clients .about-client h3 {
+  font-weight: 700;
+}
+
+.clients .about-client h4 {
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.clients .about-client i {
+  color: #7e7e7e;
+  padding-bottom: 10px;
+}
+
+.clients .about-client p {
+  font-weight: 300;
+  color: #7e7e7e;
+  font-size: 14px;
+}
+
+.clients .pagination {
+  margin-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.clients .pagination .dot {
+  border: 3px solid #b88b58;
+  margin: 0 10px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.clients .pagination .full {
   background: #b88b58;
 }
 
