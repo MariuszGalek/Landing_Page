@@ -554,7 +554,85 @@ body {
 }
 
 .logos img {
+  padding: 10px 0 20px 0;
+}
+
+/*-- price --*/
+.price {
+  height: auto;
+  background-color: #f7f7f7;
+}
+
+.price .heading {
+  padding-top: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.price .heading h2 {
+  font-size: 40;
+  font-weight: bold;
+}
+
+.price .heading h5 {
+  font-size: 20;
+  color: #aeaeae;
+  font-weight: bold;
+}
+
+.price .container {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.price .container .table {
+  background-color: #fff;
+  margin: 40px 15px 50px 15px;
+}
+
+.price .container .table h5 {
+  margin-top: 30px;
+  font-weight: 600;
+}
+
+.price .container .table h2 {
+  font-weight: 700;
+}
+
+.price .container .table h6 {
+  font-weight: 700;
+  font-size: 10px;
+  color: #aeaeae;
+  line-height: 0;
+  padding-bottom: 20px;
+}
+
+.price .container .table p {
+  font-size: 10px;
+  line-height: 0.3;
+}
+
+.price .container .table button {
+  margin: 20px 0 40px 0;
   padding: 10px 0;
+  height: 45px;
+  width: 150px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  border-width: 0;
+  text-transform: uppercase;
+}
+
+.price .container .table button:active {
+  background-color: #b88b58;
+}
+
+.price .container .table .btn-more {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
