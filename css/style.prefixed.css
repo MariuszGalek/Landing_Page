@@ -378,4 +378,118 @@ body {
 .projects .btn-more {
   text-align: center;
 }
+
+/*-- team --*/
+.team {
+  height: auto;
+  background: url("../images/bg2.png") center;
+  background-size: cover;
+}
+
+.team .heading {
+  padding-top: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.team .heading h2 {
+  color: #fff;
+  font-size: 40;
+  font-weight: bold;
+}
+
+.team .heading h5 {
+  font-size: 20;
+  color: #aeaeae;
+  font-weight: bold;
+}
+
+.team .container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 30px;
+}
+
+.team .container .worker {
+  background-color: #fff;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding: 15px 0;
+}
+
+.team .container .worker img {
+  padding: 50px 50px 30px 50px;
+}
+
+.team .container .worker h4 {
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.team .container .worker p {
+  text-align: center;
+}
+
+.team .container .worker .social-media {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.team .container .worker .social-media i {
+  height: 30px;
+  width: 30px;
+  font-size: 15px;
+  border: 2px solid #bebebe;
+  border-radius: 50%;
+  margin: 0 2px;
+  cursor: pointer;
+  background: #bebebe;
+  color: #fff;
+  line-height: 28px;
+  text-align: center;
+}
+
+.team .container .worker .social-media i:hover {
+  border: 2px solid #b88b58;
+}
+
+.team .container .worker .social-media i:active {
+  background-color: #b88b58;
+}
+
+.team .pagination {
+  margin-top: 50px;
+  padding-bottom: 50px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.team .pagination .dot {
+  border: 3px solid #b88b58;
+  margin: 0 10px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.team .pagination .full {
+  background: #b88b58;
+}
 /*# sourceMappingURL=style.prefixed.css.map */
