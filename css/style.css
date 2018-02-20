@@ -867,4 +867,89 @@ body {
   color: #aeaeae;
 }
 
+/*-- contact --*/
+.contact {
+  height: auto;
+  background-color: #f7f7f7;
+}
+
+.contact .heading {
+  padding-top: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.contact .heading h2 {
+  font-size: 40;
+  font-weight: bold;
+}
+
+.contact .heading h5 {
+  font-size: 20;
+  color: #aeaeae;
+  font-weight: bold;
+  margin-bottom: 70px;
+}
+
+.contact form {
+  margin: 0 auto;
+  width: 30%;
+}
+
+.contact form input, .contact form textarea {
+  outline: none;
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #aeaeae;
+  background: transparent;
+  margin-bottom: 40px;
+  height: 40px;
+}
+
+.contact form textarea {
+  resize: none;
+  overflow: hidden;
+  margin-top: 50px;
+  box-shadow: none;
+}
+
+.contact form .align-left {
+  width: 45%;
+  float: left;
+}
+
+.contact form .align-right {
+  width: 45%;
+  float: right;
+}
+
+.contact form input::placeholder {
+  color: #727272;
+  font-weight: 600;
+}
+
+.contact .btn-more {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.contact .btn-more button {
+  padding: 10px 0;
+  height: 45px;
+  width: 200px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #b88b58;
+  color: white;
+  border-radius: 20px;
+  border-width: 0;
+  text-transform: uppercase;
+}
+
+.contact .btn-more button:active {
+  background-color: black;
+}
+
 /*# sourceMappingURL=style.css.map */

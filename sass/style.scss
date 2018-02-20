@@ -751,6 +751,79 @@ body {
 			font-weight: 600;
 			color: rgb(174,174,174);
 		}
+	}	
+}
+
+/*-- contact --*/
+
+.contact {
+	height: auto;
+	background-color: rgb(247,247,247);
+	.heading {
+		padding-top: 20px;
+		text-align: center;
+		font-weight: 600;
+		h2 {
+			font-size: 40;
+			font-weight: bold;
+		}
+		h5 {
+			font-size: 20;
+			color: rgb(174,174,174);
+			font-weight: bold;
+			margin-bottom: 70px;
+		}
 	}
-	
+	form {
+		margin: 0 auto;
+		width: 30%;
+		input, textarea {
+			outline: none;
+			display: inline-block;
+			width: 100%;
+			padding: 10px;
+			border: none;
+			border-bottom: 2px solid rgb(174,174,174);
+			background: transparent;
+			margin-bottom: 40px;
+			height: 40px;
+		}
+		textarea {
+			resize: none;
+			overflow: hidden;
+			margin-top: 50px;
+			box-shadow: none;
+		}
+		.align-left {
+			width: 45%;
+			float: left;
+		}
+		.align-right {
+			width: 45%;
+			float: right;
+		}
+		input::placeholder {
+			color: rgb(114,114,114);
+			font-weight: 600;
+		}
+	}
+	.btn-more {
+		text-align: center;
+		padding-bottom: 50px;
+		button {
+			padding: 10px 0;
+			height: 45px;
+			width: 200px;
+			font-size: 12px;
+			font-weight: bold;
+			background-color: $color-project;
+			color: white;
+			border-radius: 20px;
+			border-width: 0;
+			text-transform: uppercase;
+		}
+		button:active {
+			background-color: black;
+		}
+	}
 }
