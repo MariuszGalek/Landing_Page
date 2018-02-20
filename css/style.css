@@ -733,4 +733,65 @@ body {
   background-color: black;
 }
 
+/*-- facts --*/
+.facts {
+  height: auto;
+  background-color: black;
+}
+
+.facts .heading {
+  padding-top: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.facts .heading h2 {
+  font-size: 40;
+  font-weight: bold;
+  color: #fff;
+}
+
+.facts .heading h5 {
+  font-size: 20;
+  color: #aeaeae;
+  font-weight: bold;
+}
+
+.facts .container {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.facts .container .fact {
+  margin: 30px;
+}
+
+.facts .container .fact h1 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #b88b58;
+}
+
+.facts .container .fact hr {
+  width: 8%;
+  height: 3px;
+  margin: 0 auto;
+  background-color: #7e7e7e;
+  color: #7e7e7e;
+  border: 0 none;
+}
+
+.facts .container .fact h5 {
+  padding: 0;
+  font-weight: 600;
+  color: #fff;
+  font-size: 18px;
+}
+
+.facts .container .fact p {
+  font-size: 12px;
+  padding-top: 20px;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -638,3 +638,56 @@ body {
 		}
 	}
 }
+
+/*-- facts --*/
+
+.facts {
+	height: auto;
+	background-color: black;
+	.heading {
+		padding-top: 20px;
+		text-align: center;
+		font-weight: 600;
+		h2 {
+			font-size: 40;
+			font-weight: bold;
+			color: #fff;
+		}
+		h5 {
+			font-size: 20;
+			color: rgb(174,174,174);
+			font-weight: bold;
+		}
+	}
+	.container {
+		display: flex;
+		justify-content: space-between;
+		text-align: center;
+		.fact {
+			margin: 30px;
+			h1 {
+				font-size: 50px;
+				font-weight: 700;
+				color: rgb(184,139,88)
+			}
+			hr {
+				width: 8%;
+				height: 3px;
+				margin: 0 auto;
+				background-color: rgb(126,126,126);
+				color: rgb(126,126,126);
+				border: 0 none;
+			}
+			h5 {
+				padding: 0;
+				font-weight: 600;
+				color: #fff;
+				font-size: 18px;
+			}
+			p {
+				font-size: 12px;
+				padding-top: 20px;
+			}
+		}
+	}
+}
