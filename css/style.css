@@ -908,11 +908,12 @@ body {
   height: 40px;
 }
 
-.contact form textarea {
+.contact form textarea, .contact form textarea:focus {
   resize: none;
   overflow: hidden;
   margin-top: 50px;
   box-shadow: none;
+  border-bottom: 2px solid #aeaeae;
 }
 
 .contact form .align-left {
@@ -950,6 +951,62 @@ body {
 
 .contact .btn-more button:active {
   background-color: black;
+}
+
+/*-- map --*/
+.map {
+  height: 50vh;
+  background: url("../images/bg3.png") center;
+  background-size: cover;
+}
+
+.map .info {
+  position: absolute;
+  background-color: #f7f7f7;
+  height: 40vh;
+  width: 35%;
+  margin: 50px 0 50px 300px;
+  border-radius: 5px;
+}
+
+.map .info .info-details {
+  margin: 60px 0 0 50px;
+}
+
+.map .info .item {
+  padding: 5px 0;
+}
+
+.map .info p {
+  display: inline-block;
+  font-size: 12px;
+}
+
+.map .info .fa {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background-color: #aeaeae;
+  color: #fff;
+  font-size: 20px;
+  padding: 7px 0 0 8px;
+  margin-right: 20px;
+  transition: 0.3s;
+}
+
+.map .info .fa:hover {
+  background-color: #b88b58;
+  cursor: pointer;
+}
+
+.map .info .fa-map-marker {
+  padding-left: 12px;
+}
+
+.map .info .fa-at,
+.map .info .fa-globe,
+.map .info .fa-phone {
+  padding-left: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
