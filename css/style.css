@@ -249,7 +249,7 @@ body {
 
 /*-- projects --*/
 .projects {
-  height: 100vh;
+  height: auto;
 }
 
 .projects .heading {
@@ -346,7 +346,7 @@ body {
 }
 
 .projects button {
-  margin-top: 40px;
+  margin: 40px 0;
   padding: 10px 0;
   height: 45px;
   width: 200px;
@@ -1007,6 +1007,88 @@ body {
 .map .info .fa-globe,
 .map .info .fa-phone {
   padding-left: 10px;
+}
+
+/*-- footer --*/
+footer {
+  height: auto;
+  background-color: black;
+  color: #fff;
+}
+
+footer .social-media {
+  margin: 30px 0;
+}
+
+footer .social-media i {
+  height: 35px;
+  width: 35px;
+  font-size: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 4px 0;
+  margin: 0 2px;
+  background: #373737;
+  color: #fff;
+  line-height: 28px;
+  text-align: center;
+}
+
+footer .social-media i:hover, footer .social-media i:active {
+  background-color: #b88b58;
+}
+
+footer p {
+  color: #7e7e7e;
+  font-size: 12px;
+  margin-top: 30px;
+  line-height: 1.8;
+}
+
+footer .subscription {
+  margin-top: 30px;
+  background-color: #373737;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .subscription input {
+  text-align: center;
+  outline: none;
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #aeaeae;
+  background: transparent;
+  height: 40px;
+}
+
+footer .subscription button {
+  margin-top: 20px;
+  padding: 10px 0;
+  height: 45px;
+  width: 180px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #b88b58;
+  color: white;
+  border-radius: 20px;
+  border-width: 0;
+  text-transform: uppercase;
+}
+
+footer .subscription button:active {
+  background-color: black;
+}
+
+footer .copyright {
+  padding-bottom: 20px;
+  font-size: 12px;
 }
 
 /*# sourceMappingURL=style.css.map */
