@@ -691,3 +691,66 @@ body {
 		}
 	}
 }
+
+/*-- share --*/
+
+.share {
+	height: auto;
+	display: flex;
+	justify-content: space-around;
+	margin: 30px auto;
+	.tell {
+		display: flex;
+		margin-top: 5px;
+		i {
+			font-size: 30px;
+			color: rgb(174,174,174);
+		}
+		h5 {
+			color: rgb(174,174,174);
+			font-size: 14px;
+			padding-left: 20px;
+			font-weight: 600;
+		}
+	}
+	.social-icons {
+		display: flex;
+		text-align: center;
+		i {
+			height: 40px;
+			width: 40px;
+			font-size: 20px;
+			border-radius: 50%;
+			margin: 0 2px;
+			cursor: pointer;
+			color: #fff;
+			line-height: 40px;
+			text-align: center;
+		}
+		.fa-twitter {
+			background-color: rgb(52,197,240);
+		}
+		.fa-linkedin {
+			background-color: rgb(18,124,180);
+		}
+		.fa-facebook {
+			background-color: rgb(51,98,151);
+		}
+		.fa-google-plus {
+			background-color: rgb(231,66,55);
+		}
+		.fa-pinterest {
+			background-color: rgb(183,28,41);
+		}
+		i:hover, i:active {
+			background-color: black;
+		}
+		p {
+			font-size: 10px;
+			margin: 15px 40px 0 3px;
+			font-weight: 600;
+			color: rgb(174,174,174);
+		}
+	}
+	
+}

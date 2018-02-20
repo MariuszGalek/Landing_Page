@@ -794,4 +794,77 @@ body {
   padding-top: 20px;
 }
 
+/*-- share --*/
+.share {
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  margin: 30px auto;
+}
+
+.share .tell {
+  display: flex;
+  margin-top: 5px;
+}
+
+.share .tell i {
+  font-size: 30px;
+  color: #aeaeae;
+}
+
+.share .tell h5 {
+  color: #aeaeae;
+  font-size: 14px;
+  padding-left: 20px;
+  font-weight: 600;
+}
+
+.share .social-icons {
+  display: flex;
+  text-align: center;
+}
+
+.share .social-icons i {
+  height: 40px;
+  width: 40px;
+  font-size: 20px;
+  border-radius: 50%;
+  margin: 0 2px;
+  cursor: pointer;
+  color: #fff;
+  line-height: 40px;
+  text-align: center;
+}
+
+.share .social-icons .fa-twitter {
+  background-color: #34c5f0;
+}
+
+.share .social-icons .fa-linkedin {
+  background-color: #127cb4;
+}
+
+.share .social-icons .fa-facebook {
+  background-color: #336297;
+}
+
+.share .social-icons .fa-google-plus {
+  background-color: #e74237;
+}
+
+.share .social-icons .fa-pinterest {
+  background-color: #b71c29;
+}
+
+.share .social-icons i:hover, .share .social-icons i:active {
+  background-color: black;
+}
+
+.share .social-icons p {
+  font-size: 10px;
+  margin: 15px 40px 0 3px;
+  font-weight: 600;
+  color: #aeaeae;
+}
+
 /*# sourceMappingURL=style.css.map */
