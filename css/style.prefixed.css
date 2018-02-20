@@ -663,4 +663,107 @@ body {
 .price .container .table .btn-more {
   text-align: center;
 }
+
+/*-- premium --*/
+.premium {
+  height: auto;
+}
+
+.premium .heading {
+  padding-top: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.premium .heading h2 {
+  font-size: 40;
+  font-weight: bold;
+}
+
+.premium .heading h5 {
+  font-size: 20;
+  color: #aeaeae;
+  font-weight: bold;
+}
+
+.premium .container {
+  margin-top: 50px;
+  padding-bottom: 40px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.premium .container .box img {
+  height: 350px;
+}
+
+.premium .container .features {
+  margin-left: 80px;
+}
+
+.premium .container .features img {
+  height: 30px;
+  width: 35px;
+  margin-right: 40px;
+}
+
+.premium .container .features h3 {
+  font-weight: 700;
+}
+
+.premium .container .features p {
+  margin-left: 75px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.premium .pagination {
+  margin-top: 50px;
+  padding-bottom: 30px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.premium .pagination .dot {
+  border: 3px solid #b88b58;
+  margin: 0 10px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.premium .pagination .full {
+  background: #b88b58;
+}
+
+.premium .btn-more {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.premium .btn-more button {
+  padding: 10px 0;
+  height: 45px;
+  width: 200px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #b88b58;
+  color: white;
+  border-radius: 20px;
+  border-width: 0;
+  text-transform: uppercase;
+}
+
+.premium .btn-more button:active {
+  background-color: black;
+}
 /*# sourceMappingURL=style.prefixed.css.map */
