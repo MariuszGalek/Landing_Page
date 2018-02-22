@@ -11,6 +11,33 @@ body {
 	width: 1200px;
     margin: 0 auto;
 }
+.modal-dialog {
+	margin-top: 40vh;
+	height: 400px;
+	width: 350px;
+	.modal-content {
+		form {
+			margin: 0 auto;
+			width: 70%;
+			padding-top: 50px;
+			input {
+				outline: none;
+				display: inline-block;
+				width: 100%;
+				padding: 10px;
+				border: none;
+				border-bottom: 2px solid rgb(174,174,174);
+				background: transparent;
+				margin-bottom: 20px;
+				height: 50px;
+			}
+		}
+		.modal-btn {
+			padding-bottom: 40px;
+			text-align: center;
+		}
+	}
+}
 
 /*-- menu --*/
 
@@ -95,6 +122,31 @@ body {
 		}
 		.full {
 			background: $color-project;
+		}
+	}
+	.page-up, .call {
+		height: 80px;
+		width: 80px;
+		color: #fff;
+		background-color: $color-project;
+		border-radius: 50%;
+		text-align: center;
+		position: fixed;
+		bottom: 60px;
+		right: 100px;
+		z-index: 100;
+		&:hover {
+			background-color: black;
+		}
+	}
+	.page-up {
+    	right: auto;
+    	left: 100px;
+    	font-size: 60px;
+		.fa {
+            position: absolute;
+            top: 5px;
+            left: 20px;
 		}
 	}
 }
