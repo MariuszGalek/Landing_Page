@@ -7,26 +7,33 @@
     	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     	<link rel="stylesheet" type="text/css" href="css/style.css">
-    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	</head>
 	<body>
 		<header>
-			<nav class="menu">
-				<div class="container">
-				<img src="./images/logo.png" alt="logo">
-				<ul>
-					<li><a href="#" class="text-uppercase">Home</a></li>
-					<li><a href="#" class="text-uppercase">About us</a></li>
-					<li><a href="#" class="text-uppercase">Services</a></li>
-					<li><a href="#" class="text-uppercase">Our projects</a></li>
-					<li><a href="#" class="text-uppercase">Our team</a></li>
-					<li><a href="#" class="text-uppercase">Happy clients</a></li>
-					<li><a href="#" class="text-uppercase">Price</a></li>
-					<li><a href="#" class="text-uppercase">Some facts</a></li>
-					<li><a href="#" class="text-uppercase">Contact us</a></li>
-				</ul>
-				</div>
+			<nav class="navbar navbar-inverse">
+  				<div class="container container-fluid">
+    				<div class="navbar-header">
+      					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>                        
+      					</button>
+      					<img src="./images/logo.png" alt="logo">
+    				</div>
+    				<div class="collapse navbar-collapse" id="myNavbar">
+      					<ul class="nav navbar-nav">
+							<li><a href="#" class="text-uppercase">Home</a></li>
+							<li><a href="#about" class="text-uppercase">About us</a></li>
+							<li><a href="#services" class="text-uppercase">Services</a></li>
+							<li><a href="#projects" class="text-uppercase">Our projects</a></li>
+							<li><a href="#team" class="text-uppercase">Our team</a></li>
+							<li><a href="#clients" class="text-uppercase">Happy clients</a></li>
+							<li><a href="#price" class="text-uppercase">Price</a></li>
+							<li><a href="#facts" class="text-uppercase">Some facts</a></li>
+							<li><a href="#contact" class="text-uppercase">Contact us</a></li>
+      					</ul>
+    				</div>
+  				</div>
 			</nav>
 		</header>
 		<section class="jumbotron">
@@ -62,7 +69,7 @@
     	</div>
 		<button onclick="topFunction()" id="upBtn" class="page-up"><i class="fa fa-angle-up"></i></button>
     	</section>
-    	<section class="about-us">
+    	<section id="about" class="about-us">
     		<div class="container">
     			<div class="heading">
 					<h2 class="heading text-uppercase">About us</h2>
@@ -74,13 +81,15 @@
 					<button>Learn more</button>
 				</div>
 				<div class="video">
-					<h2 class="text-uppercase text-center">Watch</h2>
-					<i class="fa fa-play-circle-o fa-5x" aria-hidden="true"></i>
-					<h2 class="text-uppercase text-center">video!</h2>
+					<div class="video-text">
+						<h2 class="text-uppercase text-center">Watch</h2>
+						<i class="fa fa-play-circle-o fa-5x" aria-hidden="true"></i>
+						<h2 class="text-uppercase text-center">video!</h2>
+					</div>
 				</div>
 			</div>
     	</section>
-    	<section class="services">
+    	<section id="services" class="services">
     		<div class="container">
     			<div class="heading">
 					<h2 class="heading text-uppercase">Services</h2>
@@ -111,19 +120,21 @@
 			</div>
 		</div>
     	</section>
-    	<section class="projects">
+    	<section id="projects" class="projects">
     		<div class="heading">
 				<h2 class="heading text-uppercase">Our projects</h2>
 				<h5 class="text-uppercase">What we create</h5>
 			</div>
-            <ul class="nav nav-pills text-uppercase" id="projectsTabs">
-                <li class="current"><a data-toggle="tab" href="#all">All</a></li>
-                <li><a data-toggle="tab" href="#all">Photos</a></li>
-                <li><a data-toggle="tab" href="#all">Branding</a></li>
-                <li><a data-toggle="tab" href="#all">Adverts</a></li>
-                <li><a data-toggle="tab" href="#all">Development</a></li>
-                <li><a data-toggle="tab" href="#all">Misc</a></li>
-			</ul>
+			<div class="pills">
+	            <ul class="nav nav-pills text-uppercase" id="projectsTabs">
+	                <li class="current"><a data-toggle="tab" href="#all">All</a></li>
+	                <li><a data-toggle="tab" href="#all">Photos</a></li>
+	                <li><a data-toggle="tab" href="#all">Branding</a></li>
+	                <li><a data-toggle="tab" href="#all">Adverts</a></li>
+	                <li><a data-toggle="tab" href="#all">Development</a></li>
+	                <li><a data-toggle="tab" href="#all">Misc</a></li>
+				</ul>
+			</div>
 			<div class="container">
 	    		<div class="row">
 	    			<div class="text-layer">
@@ -133,13 +144,69 @@
 	    				</span>
 	    				<img src="./images/img1.png" alt="Project 1">
 					</div>
-	    			<div class="text-layer">
+	    			<div class="text-layer" data-toggle="modal" data-target="#project-modal">
 	    				<span class="description">
 	    					<h4>About</h4>
 	    					<p>Praesent metus urna, feugiat<br>a placerat elementum at leo</p>
 	    				</span>
 	    				<img src="./images/img2.png" alt="Project 2">
+	    				<div id="project-modal" class="modal" role="dialog">
+    						<div class="modal-dialog">
+    							<div class="modal-content">
+    								<div class="upper-modal">
+    									<div class="upper-modal-text">
+			    							<h6 class="text-uppercase">Date Added</h6>
+			    							<h5 class="text-uppercase">Item name</h5>
+			    							<p>Details</p>
+			    						</div>
+			    						<div class="main-img text-center">
+			    							<img src="../images/modal.png" alt="Project image">
+			    						</div>
+			    						<div class="upper-modal-icons">
+				    						<div class="small-icons">
+					    						<img src="../images/img5.png" alt="Project icon">
+					    						<img src="../images/img5.png" alt="Project icon">
+					    						<img src="../images/img5.png" alt="Project icon">
+					    						<img src="../images/img5.png" alt="Project icon">			    						
+				    						</div>
+			    							<div class="modal-buttons">
+			    								<button><i class="fa fa-angle-left fa-3x"></i></button>
+			    								<button><i class="fa fa-angle-right fa-3x"></i></button>
+			    							</div>
+			    						</div>
+			    					<div class="lower-modal">
+			    						<div class="modal-text">
+			    							<h6>Details</h6>
+			    							<p>Praesent metus urna, feugiat a placerat vel, elementum at leo. Quisque vel fermentum ipsum. Nulla at facilisis est, vel condimentum ligula. consectetur. Fusce sed purus eros. Vivamus rhoncus, ipsum in tempus fermentum, orci leo facilisis purus</p>
+			    						</div>
+			    						<div class="modal-social">
+			    							<div class="social">
+									    		<i class="fa fa-twitter"></i>
+									    		<p>152</p>
+									    	</div>
+									    	<div class="social">
+									    		<i class="fa fa-linkedin"></i>
+									    		<p>31</p>
+									    	</div>
+									    	<div class="social">
+								    			<i class="fa fa-facebook"></i>
+								    			<p>165</p>
+								    		</div>
+								    		<div class="social">
+									    		<i class="fa fa-google-plus"></i>
+									    		<p>22</p>
+									    	</div>
+									    	<div class="social">
+									    		<i class="fa fa-pinterest"></i>
+									    		<p>165</p>
+									    	</div>
+			    						</div>
+			    					</div>
+    							</div>
+    						</div>
+    					</div>
 	  				</div>
+	    			</div>
 	    			<div class="text-layer">
 	    				<span class="description">
 	    					<h4>About</h4>
@@ -222,7 +289,7 @@
 				</button>
 			</div>
     	</section>
-    	<section class="team">
+    	<section id="team" class="team">
     		<div class="heading">
 				<h2 class="heading text-uppercase">Our team</h2>
 				<h5 class="text-uppercase">Our co-workers</h5>
@@ -277,7 +344,7 @@
 				<div class="dot"></div>
 			</div>
     	</section>
-    	<section class="clients">
+    	<section id="clients" class="clients">
     		<div class="heading">
 				<h2 class="heading text-uppercase">Happy clients</h2>
 				<h5 class="text-uppercase">Client reviews</h5>
@@ -303,7 +370,7 @@
     		<img src="../images/logo5.png" alt="Logo 5">
     		<img src="../images/logo6.png" alt="Logo 6">    	
     	</section>
-    	<section class="price">
+    	<section id="price" class="price">
     		<div class="heading">
 				<h2 class="heading text-uppercase">Price</h2>
 				<h5 class="text-uppercase">Pricing table</h5>
@@ -400,7 +467,7 @@
 				</button>
 			</div>
     	</section>
-    	<section class="facts">
+    	<section id="facts" class="facts">
     		<div class="heading">
 				<h2 class="heading text-uppercase">Some facts</h2>
 				<h5 class="text-uppercase">About our work</h5>
@@ -450,7 +517,7 @@
 	    		<p>165</p>
     		</div>
     	</section>
-    	<section class="contact">
+    	<section id="contact" class="contact">
     		<div class="heading">
 				<h2 class="heading text-uppercase">Contact us</h2>
 				<h5 class="text-uppercase">Our agency located in Melbourne, Australia</h5>
@@ -524,6 +591,8 @@
     			</div>
     		</div>
     	</footer>
+   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 	</body>
 </html>
