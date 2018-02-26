@@ -117,9 +117,17 @@ body {
   background-color: black;
 }
 
-#project-modal .modal-dialog .upper-modal-icons .modal-buttons i {
+#project-modal .modal-dialog .upper-modal-icons .modal-buttons button i {
   position: relative;
-  top: calc(50% - 18px);
+  top: -8px;
+}
+
+#project-modal .modal-dialog .upper-modal-icons .modal-buttons button .fa-angle-left {
+  padding-right: 5px;
+}
+
+#project-modal .modal-dialog .upper-modal-icons .modal-buttons button .fa-angle-right {
+  padding-left: 5px;
 }
 
 #project-modal .modal-dialog .lower-modal {
@@ -367,6 +375,7 @@ body {
   margin-top: 50px;
   margin-bottom: 100px;
   font-weight: 400;
+  width: 80%;
 }
 
 .about-us .flex-container button {
